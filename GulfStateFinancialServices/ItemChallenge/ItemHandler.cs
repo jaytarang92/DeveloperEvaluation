@@ -1,22 +1,28 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Mail;
 using ItemChallenge.Models;
 
 namespace ItemChallenge
 {
     public class ItemHandler
     {
-        private List<Item> _items = new List<Item>();
+        private List<Item> _items = new ();
 
         public void AddItem(Item item) { _items.Add(item); }
-        private static IEnumerable<SubItemSummary> TransformSubItems(Item _, IEnumerable<Item> subItems)
+        private static IEnumerable<SubItemSummary> TransformSubItems(Item item, IEnumerable<Item> _)
         {
-            return subItems.Select(subItem => new SubItemSummary(subItem));
+            if (item != null)
+            {
+                return item.GetSubItems().Select(subItem => new SubItemSummary(subItem)).ToArray();
+            }
+            throw new ApplicationException("Item cannot be null.");
         }
             
-        public IEnumerable<Item> GetSubItems(string itemNumber)
+        private IEnumerable<Item> GetSubItems(string itemNumber)
         {
-            return _items.First(item => item.Number == itemNumber).GetSubItems();
+            return _items.First(item => itemNumber == item.Number).GetSubItems();
         }
         
         /// <summary>
@@ -41,7 +47,7 @@ namespace ItemChallenge
 
         public SubItemSummary[] GetSubItemSummaryAlt(string itemNumber)
         {
-            return GetSubItems(itemNumber).Select(subItem => new SubItemSummary(subItem)).ToArray();
+            return GetSubItems(itemNumber).SelectMany(subItem => TransformSubItems(subItem, null)).ToArray();
         }
 
     }

@@ -5,7 +5,7 @@ namespace ItemChallenge.Models
 {
     public class Item
     {
-        private List<Item> _subItems = new List<Item>();
+        private List<Item> _subItems = new ();
         public Item(string itemNumber, string itemDescription, string itemName)
         {
             Id = Guid.NewGuid();
