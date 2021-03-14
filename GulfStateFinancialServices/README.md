@@ -7,6 +7,7 @@ Challenge 1: ElectronColorCode\
 Challenge 2: ElectronColorCodeTests\
 Challenge 3: ItemChallenge\
 Challenge 4: JavascriptChallenge(** This does not show up as a project)
+Challenge 5: At the Bottom of this README
 
 ## Environment Setup
 
@@ -15,6 +16,11 @@ Please make sure you have the [.Net 5 SDK](https://dotnet.microsoft.com/download
 Then open the [solution file](https://github.com/jaytarang92/DeveloperEvaluation/blob/master/GulfStateFinancialServices/GulfStateFinancialServices.sln) in your IDE.
 
 ## Challenge Four
+
+I added an extra [project](https://github.com/jaytarang92/DeveloperEvaluation/tree/master/GulfStateFinancialServices/ElectronColorCodeWebAPI) to the solution.\
+It's a simple REST API to get ECC properties.\
+ Project Name in the solution: `ElectronColorCodeWebAPI`
+
 I don't have a lot of open-source stuff, but I did happen to create a [SMS forwarder/Service Health Checker](https://github.com/jaytarang92/sms-health-check). 
 
 The idea behind this was original to make sure my cell phone service was not degraded and could receive messages in the area I was in. There had been a time where I missed a couple of important messages, so this project came about. Also, this was around the same time Azure released their communication service. 
