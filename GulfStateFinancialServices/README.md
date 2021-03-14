@@ -23,9 +23,9 @@ It's a simple REST API to get ECC properties.\
 
 I don't have a lot of open-source stuff, but I did happen to create a [SMS forwarder/Service Health Checker](https://github.com/jaytarang92/sms-health-check). 
 
-The idea behind this was original to make sure my cell phone service was not degraded and could receive messages in the area I was in. There had been a time where I missed a couple of important messages, so this project came about. Also, this was around the same time Azure released their communication service. 
+The idea behind this was to make sure my cell phone service was not degraded and could receive messages in the area I was in. There had been a time where I missed a couple of important messages, so this project came about. Also, this was around the same time Azure released their communication service.
 
-Now I use is a proxy to respond and receive text messages where I wouldn't want my personal number exposed.
+Now I use this as a proxy to respond and receive text messages where I wouldn't want my personal number exposed.
 
 Here are some other projects I have worked on:\
 /* Remotsy is an IR Blaster for your TV */\
