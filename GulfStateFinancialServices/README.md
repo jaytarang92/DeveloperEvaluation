@@ -9,11 +9,15 @@ Challenge 3: ItemChallenge\
 Challenge 4: JavascriptChallenge(** This does not show up as a project)\
 Challenge 5: At the Bottom of this README
 
-## Environment Setup
+## Pre-requisites
 
-Please make sure you have the [.Net 5 SDK](https://dotnet.microsoft.com/download/dotnet/5.0) installed.
+- Please make sure you have the [.Net 5 SDK](https://dotnet.microsoft.com/download/dotnet/5.0) installed.
 
-Then open the [solution file](https://github.com/jaytarang92/DeveloperEvaluation/blob/master/GulfStateFinancialServices/GulfStateFinancialServices.sln) in your IDE.
+## Running the Projects
+
+- Open the [solution file](https://github.com/jaytarang92/DeveloperEvaluation/blob/master/GulfStateFinancialServices/GulfStateFinancialServices.sln) in your IDE.
+- Restore `nuget packages` for the whole solution
+- Now you should be able to run each project in the solution
 
 ## Challenge Five
 
