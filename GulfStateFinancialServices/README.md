@@ -6,7 +6,7 @@ There is a project for each of the challenges.
 Challenge 1: ElectronColorCode\
 Challenge 2: ElectronColorCodeTests\
 Challenge 3: ItemChallenge\
-Challenge 4: JavascriptChallenge(** This does not show up as a project)
+Challenge 4: JavascriptChallenge(** This does not show up as a project)\
 Challenge 5: At the Bottom of this README
 
 ## Environment Setup
@@ -15,7 +15,7 @@ Please make sure you have the [.Net 5 SDK](https://dotnet.microsoft.com/download
 
 Then open the [solution file](https://github.com/jaytarang92/DeveloperEvaluation/blob/master/GulfStateFinancialServices/GulfStateFinancialServices.sln) in your IDE.
 
-## Challenge Four
+## Challenge Five
 
 I added an extra [project](https://github.com/jaytarang92/DeveloperEvaluation/tree/master/GulfStateFinancialServices/ElectronColorCodeWebAPI) to the solution.\
 It's a simple REST API to get ECC properties.\
