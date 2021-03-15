@@ -1,5 +1,6 @@
-﻿using System.Linq;
+﻿using System;
 using ElectronColorCode;
+using ElectronColorCodeWebAPI.Exceptions;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
@@ -15,16 +16,24 @@ namespace ElectronColorCodeWebAPI.Controllers
 
         // GET: api/ECC
         [HttpGet]
-        public string Get()
+        public IActionResult Get()
         {
-            return JsonConvert.SerializeObject(eccTable.eccTable.ToArray());
+            return Ok(JsonConvert.SerializeObject(eccTable.eccTable));
         }
 
         // GET api/ECC/green
         [HttpGet("{eccColor}")]
-        public string Get(string eccColor)
-        { 
-            return JsonConvert.SerializeObject(eccTable.GetElectronColorCode(eccColor));
+        public IActionResult Get(string eccColor)
+        {
+            try
+            {
+                return Ok(JsonConvert.SerializeObject(eccTable.GetElectronColorCode(eccColor)));
+            }
+            catch (ApplicationException appEx)
+            {
+                return NotFound(JsonConvert.SerializeObject(new APIException(appEx)));
+
+            }
         }
     }
 }
