@@ -15,6 +15,8 @@ namespace ElectronColorCode.ECCProperties
         public static string Green => "Green";
         public static string Blue => "Blue";
         public static string Violet => "Violet";
+        // Handle Grey and Gray
+        public static string Gray => "Gray";
         public static string Grey => "Grey";
         public static string White => "White";
     }
